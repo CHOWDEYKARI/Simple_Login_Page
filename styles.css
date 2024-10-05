@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Arial, sans-serif; /* Added backup font */
+    background: linear-gradient(120deg, #007bff, #d0314c);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .center {
+    width: 29vw;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .center h1 {
+    text-align: center;
+    border-bottom: 1px solid silver;
+    padding-bottom: 20px; /* Adjusted padding */
+  }
+  
+  .center form {
+    padding: 0; /* Removed unnecessary padding */
+  }
+  
+  .txt_field {
+    position: relative;
+    margin: 30px 0;
+  }
+  
+  .txt_field input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #adadad;
+    background: none;
+    outline: none;
+  }
+  
+  .txt_field label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.3s ease-out;
+  }
+  
+  .txt_field input:focus ~ label,
+  .txt_field input:valid ~ label {
+    top: -18px;
+    font-size: 12px;
+    color: #2691d9;
+  }
+  
+  .txt_field span::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #2691d9;
+    transition: width 0.3s ease-out;
+  }
+  
+  .txt_field input:focus ~ span::before,
+  .txt_field input:valid ~ span::before {
+    width: 100%;
+  }
+  
+  .pass {
+    margin: 5px 0 20px 5px; /* Adjusted margin */
+    color: #a6a6a6;
+    cursor: pointer;
+    font-size: 14px; /* Adjusted font size */
+  }
+  
+  .pass:hover {
+    text-decoration: underline;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: #2691d9;
+    color: #e9f4fb;
+    transition: background-color 0.3s ease-out, color 0.3s ease-out;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #007bff;
+  }
+  
+  .signup_link {
+    margin-top: 30px; /* Adjusted margin */
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+  }
+  
+  .signup_link a {
+    color: #2691d9;
+    text-decoration: none;
+  }
+  
+  .signup_link a:hover {
+    text-decoration: underline;
+  }
+  
